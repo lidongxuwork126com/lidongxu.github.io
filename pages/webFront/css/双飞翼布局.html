@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>双飞翼布局_flex方式 | 学海无涯_究其本质</title>
+    <meta name="description" content="web html js javascript 李东旭">
+    <meta name="generator" content="VuePress 1.3.1">
+    <link rel="icon" href="/lidongxu.github.io/logo.png">
+    
+    <link rel="preload" href="/lidongxu.github.io/assets/css/0.styles.f0d787c1.css" as="style"><link rel="preload" href="/lidongxu.github.io/assets/js/app.d6c13c38.js" as="script"><link rel="preload" href="/lidongxu.github.io/assets/js/2.687f1129.js" as="script"><link rel="preload" href="/lidongxu.github.io/assets/js/25.bf980462.js" as="script"><link rel="prefetch" href="/lidongxu.github.io/assets/js/10.a018f26f.js"><link rel="prefetch" href="/lidongxu.github.io/assets/js/11.60774361.js"><link rel="prefetch" href="/lidongxu.github.io/assets/js/12.4e4d955c.js"><link rel="prefetch" href="/lidongxu.github.io/assets/js/13.ab439882.js"><link rel="prefetch" href="/lidongxu.github.io/assets/js/14.62c3f365.js"><link rel="prefetch" href="/lidongxu.github.io/assets/js/15.541c9b6a.js"><link rel="prefetch" href="/lidongxu.github.io/assets/js/16.6979caf2.js"><link rel="prefetch" href="/lidongxu.github.io/assets/js/17.cb7e4270.js"><link rel="prefetch" href="/lidongxu.github.io/assets/js/18.c1fc459f.js"><link rel="prefetch" href="/lidongxu.github.io/assets/js/19.d7c25a7a.js"><link rel="prefetch" href="/lidongxu.github.io/assets/js/20.b0f239b7.js"><link rel="prefetch" href="/lidongxu.github.io/assets/js/21.bebd5439.js"><link rel="prefetch" href="/lidongxu.github.io/assets/js/22.6ee6e692.js"><link rel="prefetch" href="/lidongxu.github.io/assets/js/23.63622d80.js"><link rel="prefetch" href="/lidongxu.github.io/assets/js/24.1e7574c6.js"><link rel="prefetch" href="/lidongxu.github.io/assets/js/26.778b14ef.js"><link rel="prefetch" href="/lidongxu.github.io/assets/js/27.d7b40301.js"><link rel="prefetch" href="/lidongxu.github.io/assets/js/28.f009bb32.js"><link rel="prefetch" href="/lidongxu.github.io/assets/js/29.2702c9be.js"><link rel="prefetch" href="/lidongxu.github.io/assets/js/3.5eb075ef.js"><link rel="prefetch" href="/lidongxu.github.io/assets/js/30.2b6fcb58.js"><link rel="prefetch" href="/lidongxu.github.io/assets/js/31.085e63a3.js"><link rel="prefetch" href="/lidongxu.github.io/assets/js/32.30fb063c.js"><link rel="prefetch" href="/lidongxu.github.io/assets/js/33.7c1a0b6d.js"><link rel="prefetch" href="/lidongxu.github.io/assets/js/34.dab836f4.js"><link rel="prefetch" href="/lidongxu.github.io/assets/js/35.e7dea4b5.js"><link rel="prefetch" href="/lidongxu.github.io/assets/js/36.f5cea04c.js"><link rel="prefetch" href="/lidongxu.github.io/assets/js/37.893c4640.js"><link rel="prefetch" href="/lidongxu.github.io/assets/js/38.85d7be42.js"><link rel="prefetch" href="/lidongxu.github.io/assets/js/39.72dfb155.js"><link rel="prefetch" href="/lidongxu.github.io/assets/js/4.732c410f.js"><link rel="prefetch" href="/lidongxu.github.io/assets/js/40.93baac4f.js"><link rel="prefetch" href="/lidongxu.github.io/assets/js/41.a7f8657d.js"><link rel="prefetch" href="/lidongxu.github.io/assets/js/42.11a9758b.js"><link rel="prefetch" href="/lidongxu.github.io/assets/js/43.470ffa24.js"><link rel="prefetch" href="/lidongxu.github.io/assets/js/44.987a5e64.js"><link rel="prefetch" href="/lidongxu.github.io/assets/js/45.c5763653.js"><link rel="prefetch" href="/lidongxu.github.io/assets/js/46.cd3819d6.js"><link rel="prefetch" href="/lidongxu.github.io/assets/js/47.f15cc413.js"><link rel="prefetch" href="/lidongxu.github.io/assets/js/5.fb033f91.js"><link rel="prefetch" href="/lidongxu.github.io/assets/js/6.28717735.js"><link rel="prefetch" href="/lidongxu.github.io/assets/js/7.8b3ae96d.js"><link rel="prefetch" href="/lidongxu.github.io/assets/js/8.1b4a57ae.js"><link rel="prefetch" href="/lidongxu.github.io/assets/js/9.f5b9dfa7.js">
+    <link rel="stylesheet" href="/lidongxu.github.io/assets/css/0.styles.f0d787c1.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/lidongxu.github.io/" class="home-link router-link-active"><img src="/lidongxu.github.io/logo_ci.png" alt="学海无涯_究其本质" class="logo"> <span class="site-name can-hide">学海无涯_究其本质</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分类" class="dropdown-title"><span class="title">分类</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lidongxu.github.io/pages/webFront/css/各种FC.html" class="nav-link">
+  Web前端
+</a></li><li class="dropdown-item"><!----> <a href="/lidongxu.github.io/pages/server/概念/socket.html" class="nav-link">
+  服务器
+</a></li><li class="dropdown-item"><!----> <a href="/lidongxu.github.io/pages/algorithm/index.html" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/lidongxu.github.io/pages/computer/语言类型.html" class="nav-link">
+  计算机基础
+</a></li><li class="dropdown-item"><!----> <a href="/lidongxu.github.io/pages/software/index.html" class="nav-link">
+  软件使用
+</a></li><li class="dropdown-item"><!----> <a href="/lidongxu.github.io/pages/photo_s/index.html" class="nav-link">
+  摄影PS
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="分类" class="dropdown-title"><span class="title">分类</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/lidongxu.github.io/pages/webFront/css/各种FC.html" class="nav-link">
+  Web前端
+</a></li><li class="dropdown-item"><!----> <a href="/lidongxu.github.io/pages/server/概念/socket.html" class="nav-link">
+  服务器
+</a></li><li class="dropdown-item"><!----> <a href="/lidongxu.github.io/pages/algorithm/index.html" class="nav-link">
+  算法
+</a></li><li class="dropdown-item"><!----> <a href="/lidongxu.github.io/pages/computer/语言类型.html" class="nav-link">
+  计算机基础
+</a></li><li class="dropdown-item"><!----> <a href="/lidongxu.github.io/pages/software/index.html" class="nav-link">
+  软件使用
+</a></li><li class="dropdown-item"><!----> <a href="/lidongxu.github.io/pages/photo_s/index.html" class="nav-link">
+  摄影PS
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>CSS相关</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/lidongxu.github.io/pages/webFront/css/各种FC.html" class="sidebar-link">各种FC</a></li><li><a href="/lidongxu.github.io/pages/webFront/css/line-height.html" class="sidebar-link">line-height</a></li><li><a href="/lidongxu.github.io/pages/webFront/css/vertical-align.html" class="sidebar-link">vertical-align</a></li><li><a href="/lidongxu.github.io/pages/webFront/css/弹性布局.html" class="sidebar-link">弹性布局</a></li><li><a href="/lidongxu.github.io/pages/webFront/css/子元素居中问题.html" class="sidebar-link">子元素居中</a></li><li><a href="/lidongxu.github.io/pages/webFront/css/双飞翼布局.html" class="active sidebar-link">双飞翼布局</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/lidongxu.github.io/pages/webFront/css/双飞翼布局.html#双飞翼布局-flex方式" class="sidebar-link">双飞翼布局_flex方式</a></li><li class="sidebar-sub-header"><a href="/lidongxu.github.io/pages/webFront/css/双飞翼布局.html#双飞翼布局-magin方式" class="sidebar-link">双飞翼布局_magin方式</a></li></ul></li><li><a href="/lidongxu.github.io/pages/webFront/css/圣杯布局.html" class="sidebar-link">圣杯布局</a></li><li><a href="/lidongxu.github.io/pages/webFront/css/CSS绘制三角形.html" class="sidebar-link">CSS绘制三角形</a></li><li><a href="/lidongxu.github.io/pages/webFront/css/div添加箭头.html" class="sidebar-link">div添加箭头</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Javascript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Vue</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>浏览器相关</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>web面试题</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="双飞翼布局-flex方式"><a href="#双飞翼布局-flex方式" class="header-anchor">#</a> 双飞翼布局_flex方式</h2> <ol><li>效果如下: (两边固定宽度, 中间自适应)
+<img src="/webFront/%E5%8F%8C%E9%A3%9E%E7%BF%BC%E5%B8%83%E5%B1%80.png" alt=""></li> <li>设计思路:
+利用flex弹性布局, 左右固定宽度, 中间div设置flex: 1; 即可实现</li> <li>标签结构:</li></ol> <div class="language-html line-numbers-mode"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>wrap<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>left_div<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>左-红色Div<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>main_div<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>我是内容啊我是内容啊我是内容啊我是内容啊<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>right_div<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>右-蓝色Div<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><ol start="4"><li>样式结构</li></ol> <div class="language-css line-numbers-mode"><pre class="language-css"><code><span class="token selector">*</span><span class="token punctuation">{</span>
+    <span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.wrap</span> <span class="token punctuation">{</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.left_div,
+.main_div,
+.right_div</span> <span class="token punctuation">{</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 130px<span class="token punctuation">;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.left_div</span> <span class="token punctuation">{</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.main_div</span> <span class="token punctuation">{</span>
+    <span class="token property">flex</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
+    <span class="token property">min-height</span><span class="token punctuation">:</span> 130px<span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span> green<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.right_div</span> <span class="token punctuation">{</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><h2 id="双飞翼布局-magin方式"><a href="#双飞翼布局-magin方式" class="header-anchor">#</a> 双飞翼布局_magin方式</h2> <ol><li>效果如下: (两边固定宽度, 中间自适应)
+<img src="/webFront/%E5%8F%8C%E9%A3%9E%E7%BF%BC%E5%B8%83%E5%B1%80.png" alt=""></li> <li>设计思路:</li></ol> <ul><li>3个div浮动在一行显示, 中间div需要把内容写在子div中</li> <li>中间层div, 设置左右margin为左右div留下空隙</li> <li>三个浮动div, 自左向右排列, 如果右侧div设置margin-left为负数, 就会挤进来, 看图
+<img src="/webFront/margin%E4%B8%BA%E8%B4%9F.png" alt=""></li> <li>红色margin-left: -100%; 挤到最左边, 蓝色margin-left: -200px</li></ul> <ol start="3"><li>标签结构:</li></ol> <div class="language-html line-numbers-mode"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!--父级wrap用于, 清除三块div的浮动--&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>wrap<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token comment">&lt;!--
+        1. 这里要套一个外层div占据整个容器宽度,内部div默认宽度百分百
+        如果没有外层容器, 则宽度无法撑开
+        2. 内部div设置左右margin, 空出left和right要显示的位置
+        3. left和right的div是要去左边的, 所以main_div要写在上面--&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>main_div<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>main_content<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>我是内容啊我是内容啊我是内容啊我是内容啊<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>left_div<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>左-红色Div<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>right_div<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>右-蓝色Div<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><ol start="4"><li>样式:</li></ol> <div class="language-css line-numbers-mode"><pre class="language-css"><code><span class="token selector">*</span><span class="token punctuation">{</span>
+    <span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.wrap::after</span><span class="token punctuation">{</span>
+    <span class="token property">content</span><span class="token punctuation">:</span> <span class="token string">&quot; &quot;</span><span class="token punctuation">;</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> block<span class="token punctuation">;</span>
+    <span class="token property">clear</span><span class="token punctuation">:</span> both<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.left_div,
+.main_div,
+.right_div</span> <span class="token punctuation">{</span>
+    <span class="token property">float</span><span class="token punctuation">:</span> left<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 130px<span class="token punctuation">;</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> white<span class="token punctuation">;</span>
+ <span class="token punctuation">}</span>
+<span class="token selector">.left_div</span> <span class="token punctuation">{</span>
+    <span class="token property">margin-left</span><span class="token punctuation">:</span> -100%<span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.right_div</span> <span class="token punctuation">{</span>
+    <span class="token property">margin-left</span><span class="token punctuation">:</span> -200px<span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.main_div</span> <span class="token punctuation">{</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 130px<span class="token punctuation">;</span>
+    <span class="token property">background</span><span class="token punctuation">:</span> green<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.main_content</span><span class="token punctuation">{</span>
+    <span class="token property">margin-left</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+    <span class="token property">margin-right</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br></div></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/lidongxu.github.io/pages/webFront/css/子元素居中问题.html" class="prev">
+        子元素居中
+      </a></span> <span class="next"><a href="/lidongxu.github.io/pages/webFront/css/圣杯布局.html">
+        圣杯布局
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/lidongxu.github.io/assets/js/app.d6c13c38.js" defer></script><script src="/lidongxu.github.io/assets/js/2.687f1129.js" defer></script><script src="/lidongxu.github.io/assets/js/25.bf980462.js" defer></script>
+  </body>
+</html>
